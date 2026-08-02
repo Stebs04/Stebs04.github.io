@@ -239,3 +239,37 @@ main h2 {
 .btn-dettagli:hover {
     text-decoration: underline;
 }
+
+/* --- FOOTER E SOCIAL LINKS --- */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px; /* Crea spazio tra il contenuto della pagina e il footer */
+    border-top: 1px solid var(--border-color); /* Una linea sottile di separazione */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Spazio tra un link e l'altro */
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px); /* Piccolo effetto di sollevamento al passaggio del mouse */
+}
+
+footer p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
