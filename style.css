@@ -158,3 +158,84 @@ main h2 {
     font-size: 1.1rem;
     grid-column: 1 / -1; /* Centra il messaggio su tutta la griglia */
 }
+
+/* --- PAGINA SINGOLO PROGETTO & CAROSELLO --- */
+.back-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.carousel-hidden {
+    display: none !important;
+}
+
+.carousel-visible {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    gap: 20px;
+}
+
+.carousel-image-wrapper {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#carousel-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.carousel-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background-color: var(--primary-hover);
+    transform: scale(1.1);
+}
+
+.btn-dettagli {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-dettagli:hover {
+    text-decoration: underline;
+}

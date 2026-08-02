@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dettaglio Progetto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="padding: 40px 20px 20px;">
+        <a href="index.html" class="back-link">&larr; Torna al Portfolio</a>
+        <h1 id="repo-title">Caricamento...</h1>
+        <p id="repo-desc"></p>
+        <div id="repo-links" class="links" style="justify-content: center; margin-top: 20px;"></div>
+    </header>
+
+    <main>
+        <!-- Carosello Immagini -->
+        <div id="carousel-container" class="carousel-hidden">
+            <button id="prev-btn" class="carousel-btn">&lt;</button>
+            <div class="carousel-image-wrapper">
+                <img id="carousel-img" src="" alt="Immagine Progetto">
+            </div>
+            <button id="next-btn" class="carousel-btn">&gt;</button>
+            <p id="image-counter" style="text-align: center; margin-top: 10px; color: var(--text-muted);"></p>
+        </div>
+        <p id="no-images-msg" style="text-align: center; color: var(--text-muted); display: none;">
+            Nessuna immagine trovata per questo progetto.
+        </p>
+    </main>
+
+    <script src="project.js"></script>
+</body>
+</html>

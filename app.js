@@ -15,7 +15,6 @@ async function fetchGitHubProjects() {
         const myProjects = repos.filter(repo => !repo.fork);
 
         myProjects.forEach(repo => {
-            // Crea una card HTML per ogni progetto
             const card = document.createElement('div');
             card.className = 'project-card';
             
@@ -26,8 +25,8 @@ async function fetchGitHubProjects() {
                     <span>${repo.language ? repo.language : 'Codice'}</span>
                 </div>
                 <div class="links">
-                    <a href="${repo.html_url}" target="_blank">Vedi su GitHub</a>
-                    ${repo.homepage ? `<a href="${repo.homepage}" target="_blank">Sito Live</a>` : ''}
+                    <!-- NUOVO: Link alla pagina di dettaglio del progetto -->
+                    <a href="project.html?repo=${repo.name}" class="btn-dettagli">Scopri di più &rarr;</a>
                 </div>
             `;
             
